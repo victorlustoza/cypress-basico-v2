@@ -7,10 +7,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js 20.11.0
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: "20.11.0"
+          node-version: "20.14.0"
 
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
